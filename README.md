@@ -6,8 +6,11 @@ Equity Engine is a context-based conversational memory chatbot that uses the sta
 ## Features
 
 **Retrieval-Augmented Generation (RAG):** The chatbot utilizes the RAG framework to combine retrieval-based methods with language generation, enabling it to provide contextually relevant responses sourced from university websites.
+
 **LangChain Integration:** The chatbot leverages LangChain's document loaders, text splitters, embedding models, vector stores, and retrievers to process and retrieve information effectively.
+
 **User-Friendly Interface:** Built with Streamlit, the chatbot offers a seamless interaction experience, allowing users to ask questions and receive instant responses.
+
 **Continuous Improvement:** The chatbot includes mechanisms for feedback collection and iterative refinement to enhance accuracy and user satisfaction over time.
 
 ## System Architecture
@@ -18,10 +21,15 @@ Equity Engine is a context-based conversational memory chatbot that uses the sta
 The development of this chatbot follows a structured methodology outlined in the accompanying documentation:
 
 **Data Collection:** URLs representing various university website sections are compiled to serve as primary information sources.
+
 **Data Processing:** LangChain's document loaders and text splitters are used to preprocess HTML content and extract relevant text chunks.
+
 **Embedding Generation:** OpenAIEmbeddings are employed to generate semantic representations of text data for efficient retrieval.
+
 **Vector Storage:** FAISS is utilized to create a vector store for storing and querying computed embeddings.
+
 **Retrieval-Based Chatbot:** The chatbot is developed using LangChain's RetrievalQAWithSourcesChain to retrieve answers to user queries based on similarity of embeddings.
+
 **User Interface:** Streamlit is employed to design a user-friendly interface, enabling seamless interaction with the chatbot.
 
 ## Code Overview 
