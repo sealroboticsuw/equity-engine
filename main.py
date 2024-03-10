@@ -10,7 +10,7 @@ import streamlit as st
 import shelve
 from query_service import QueryService
 import logging
-#from streamlit_feedback import streamlit_feedback
+from streamlit_feedback import streamlit_feedback
 
 st.title("EquityEngine")
 
