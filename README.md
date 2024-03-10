@@ -19,7 +19,7 @@ Equity Engine is a context-based conversational memory chatbot aimed at facilita
 The chatbot interface is built using Streamlit, allowing users to interact intuitively with the bot through a web-based interface.
 
 ## System Architecture
-![Equity Engine - Draft Poster pptx](https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/11/02134810/W-Logo_Purple_RGB.png)
+![Equity Engine - Draft Poster pptx](https://github.com/sealroboticsuw/equity-engine/blob/main/sys_arch.png)
 main.py
 query_service.py
 agent.py
