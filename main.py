@@ -10,6 +10,7 @@ import streamlit as st
 import shelve
 from query_service import QueryService
 import logging
+from streamlit_feedback import streamlit_feedback
 
 st.title("EquityEngine")
 
@@ -22,26 +23,26 @@ st.markdown(
         f"""
             <style>
                 [data-testid="stSidebar"] {{
-                    background-image: url(https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/11/02134809/W-Logo_Gold_RGB.png);
+                    background-image: url("https://raw.githubusercontent.com/thekshita/custom-chatbot/ui-edit/ECE_UW_logo.jpg");
                     background-repeat: no-repeat;
                     padding-top: 80px;
                     background-position: 20px 20px;
-                    background-color: #4b2e83;
-                    background-size: 200px;
+                    background-color: #e8e3d3;
+                    background-size: 300px;
                     width: 1000px;
                 }}
                 [data-testid="stApp"] {{
-                    background-color: #e8e3d3;
+                    /* background-color: #4b2e83; */
                 }}
                 .sidebar-content {{
                     margin-top: 50px; /* Adjust top margin for content alignment */
                 }}
                 .sidebar-radio-group > div {{
                     margin-top: 20px; /* Adjust the margin between buttons */
-                    color: white;
+                    background-color: #4b2e83;
                 }}
                 .sidebar-radio-group label {{
-                    color: white !important; /* Change text color of radio button labels */
+                    color: #4b2e83;
                 }}
             </style>
             """,
@@ -51,7 +52,12 @@ st.markdown(
 #st.markdown(page_bg_img, unsafe_allow_html=True)
 
 disclaimer_text = """
-This tool is not an exhaustive source of information pertinent to the University of Washington. It may sometimes produce erroneous results. It is recommended that you verify any information.
+Welcome to Equity Engine, your campus chatbot powered by OpenAI's language model!  
+Please note that while this chatbot aims to provide helpful information and assistance, 
+it is still a work in progress and may not always be entirely accurate or comprehensive. 
+We encourage you to use your own discretion and consult official university resources 
+for critical matters. Your feedback is valuable in improving our service. 
+Thank you for understanding.
 """
 
 
@@ -107,6 +113,10 @@ if prompt := st.chat_input("How can I help?"):
 
         # Display the response
         message_placeholder.markdown(full_response)
+        # Collect Feedback
+        feedback = streamlit_feedback(
+        feedback_type="thumbs",
+        optional_text_label="Help us improve!")
     
     st.session_state.messages.append({"role": "assistant", "content": full_response})
 
