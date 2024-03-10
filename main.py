@@ -10,7 +10,7 @@ import streamlit as st
 import shelve
 from query_service import QueryService
 import logging
-from streamlit_feedback import streamlit_feedback
+#from streamlit_feedback import streamlit_feedback
 
 st.title("EquityEngine")
 
@@ -23,9 +23,9 @@ st.markdown(
         f"""
             <style>
                 [data-testid="stSidebar"] {{
-                    background-image: url("https://raw.githubusercontent.com/thekshita/custom-chatbot/ui-edit/ECE_UW_logo.jpg");
+                    background-image: url(https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/230/2023/11/02134808/W-Logo_Purple_Hex.png);
                     background-repeat: no-repeat;
-                    padding-top: 80px;
+                    padding-top: 150px;
                     background-position: 20px 20px;
                     background-color: #e8e3d3;
                     background-size: 300px;
@@ -35,7 +35,7 @@ st.markdown(
                     /* background-color: #4b2e83; */
                 }}
                 .sidebar-content {{
-                    margin-top: 50px; /* Adjust top margin for content alignment */
+                    margin-top: 100px; /* Adjust top margin for content alignment */
                 }}
                 .sidebar-radio-group > div {{
                     margin-top: 20px; /* Adjust the margin between buttons */
