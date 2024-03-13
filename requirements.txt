@@ -1,7 +1,4 @@
 
-beautifulsoup4==4.12.3
-chroma-hnswlib==0.7.3
-chromadb==0.4.24
 faiss-cpu==1.7.4
 html2text==2024.2.26
 langchain==0.0.239
@@ -12,9 +9,7 @@ numpy==1.24.2
 oauthlib==3.2.2
 olefile==0.46
 openai==0.27.1
-openapi-schema-pydantic==1.2.4
-pydantic==1.10.13
-pydantic_core==2.14.6
+openapi-schema-pydantic==1.2.4\
 six==1.16.0
 statsmodels==0.14.0
 streamlit==1.31.0
