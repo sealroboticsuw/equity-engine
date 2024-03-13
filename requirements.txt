@@ -6,7 +6,7 @@ faiss-cpu==1.7.4
 greenlet==1.1.0
 html2text==2024.2.26
 langchain==0.0.239
-langchain-community==0.0.25
+langchain-community
 langchain-core==0.1.28
 langcodes==3.3.0
 numpy==1.24.2
