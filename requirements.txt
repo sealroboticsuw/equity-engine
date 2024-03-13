@@ -7,7 +7,7 @@ greenlet==1.1.0
 html2text==2024.2.26
 langchain==0.0.239
 langchain-community
-langchain-core==0.1.28
+langchain-core
 langcodes==3.3.0
 numpy==1.24.2
 oauthlib==3.2.2
