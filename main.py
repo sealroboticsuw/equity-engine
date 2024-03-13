@@ -10,7 +10,7 @@ import streamlit as st
 import shelve
 from query_service import QueryService
 import logging
-from streamlit_feedback import streamlit_feedback
+#from streamlit_feedback import streamlit_feedback
 
 st.title("EquityEngine")
 
@@ -114,9 +114,9 @@ if prompt := st.chat_input("How can I help?"):
         # Display the response
         message_placeholder.markdown(full_response)
         # Collect Feedback
-        feedback = streamlit_feedback(
-        feedback_type="thumbs",
-        optional_text_label="Help us improve!")
+        #feedback = streamlit_feedback(
+        #feedback_type="thumbs",
+        #optional_text_label="Help us improve!")
     
     st.session_state.messages.append({"role": "assistant", "content": full_response})
 
