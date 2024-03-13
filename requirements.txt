@@ -3,7 +3,6 @@ beautifulsoup4==4.12.3
 chroma-hnswlib==0.7.3
 chromadb==0.4.24
 faiss-cpu==1.7.4
-greenlet==1.1.0
 html2text==2024.2.26
 langchain==0.0.239
 langchain-community
@@ -14,7 +13,6 @@ oauthlib==3.2.2
 olefile==0.46
 openai==0.27.1
 openapi-schema-pydantic==1.2.4
-playwright==1.42.0
 pydantic==1.10.13
 pydantic_core==2.14.6
 six==1.16.0
