@@ -1,5 +1,5 @@
 
-faiss-cpu==1.7.4
+faiss-cpu==1.7.2
 html2text==2024.2.26
 langchain==0.0.239
 langchain-community
